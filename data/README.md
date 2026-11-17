@@ -19,7 +19,7 @@ the right-hand column have to be downloaded.
 | `01b_coloc_window_tiers.R` | S2a | yes (from S2b), or from the output of `01a` | - |
 | `01c_window_gene_mapping.R` | S4, S3b, gene-to-window table | yes (from S2a) plus `hg19_refgene.txt`; without the FUMA files 509 of the 526 rows of S4 and 151 of the 199 shared genes are found | `hg19_refgene.txt` (UCSC); FUMA `genes.txt` files (`FUMA_DIR`) for genes with former symbols or clone-based names (17 symbols of S4, 48 of the 199 shared genes); with them all rows are found |
 | `02_*` ... `11_*` | S6 - S13 | see the table below | GEO and Ensembl files |
-| `figures/*` | Figures 2 - 6, S1 - S3 | yes | optional public GWAS files for the regional panels |
+| `figures/*` | Figures 2 - 6, S1 - S3 | yes for Figures 5, 6, S1 and S2; Figure 2 (panel C), Figure 3 (panel B) and Figure 4 (panels B, C) also need `GSE85793_mouse_liver_T3_DESeq2_all_genes.csv` (made by `03_*`) and `T3_effect_WT_KO_interaction_wide.csv` (made by `08_*`; without them Figure 3 stops, the panels of Figures 2 and 4 become a note) | optional public GWAS files for the regional panels (Figures 2B, S3); optional `DEG_WT_T3_effect.csv` for the standard errors of Figure 6 |
 
 ## Public data
 
@@ -48,8 +48,8 @@ All GWAS files are on genome build GRCh37. `.gz` files can be used as they are (
 | File | Made by | Read by |
 |---|---|---|
 | `0_count_matrix.csv`, `1_cleaned_count_matrix.csv`, `1_cleaned_coldata.csv` | `02_*` | `03_*`, `05_*` |
-| `250912__DEG_all_genes.csv`, `261020__DEG_all_genes_with_stat.csv`, `GSE85793_mouse_liver_T3_DESeq2_all_genes.csv` | `03_*` | `04_*`, `05_*`, `07_*`, `figures/Fig2*` |
-| `DEG_WT_T3_effect.csv`, `DEG_KO_T3_effect.csv`, `T3_effect_WT_KO_interaction_wide.csv` (written by `08_*` to `GSE270233_DESeq2/`) | `08_*` | `07_*`, `11_*` |
+| `250912__DEG_all_genes.csv`, `261020__DEG_all_genes_with_stat.csv`, `GSE85793_mouse_liver_T3_DESeq2_all_genes.csv` | `03_*` | `04_*`, `05_*`, `07_*`, `figures/Fig2*`, `figures/Fig3*` |
+| `DEG_WT_T3_effect.csv`, `DEG_KO_T3_effect.csv`, `T3_effect_WT_KO_interaction_wide.csv` (written by `08_*` to `GSE270233_DESeq2/`) | `08_*` | `07_*`, `11_*`, `figures/Fig4*`, `figures/Fig6*` (optional) |
 | `coloc_windows.tsv`, `coloc_pairs.tsv` | `01a_*` | `01b_*` |
 | `window_tiers.tsv` | `01b_*` | `01c_*` |
 | `261019_gene_locus_full_mapping.xlsx` (gene to window mapping) | `01c_*` | `05_*` |

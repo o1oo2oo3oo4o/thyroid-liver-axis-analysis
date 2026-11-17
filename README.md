@@ -1,18 +1,25 @@
-# Thyroid-liver axis analysis
+# Shared thyroid-liver genetics and hepatic triiodothyronine transcriptomics prioritize THRB-sensitive candidates and reveal redox-related transcriptional responses in steatotic liver disease
 
-Analysis code for the manuscript on genetic and transcriptomic links between thyroid hormone signalling and metabolic
+## Abstract
+
+Thyroid hormone receptor beta agonism has established hepatic thyroid hormone signaling as an effective therapeutic strategy for metabolic dysfunction-associated steatotic liver disease, yet the downstream hepatic responsive elements linking human genetic variation to direct receptor activity remain poorly defined. We conducted a multi-omics investigation of the thyroid-liver axis focusing on disease-relevant and hormone-responsive hepatic elements. We used a parallel prioritization framework integrating directional hepatic triiodothyronine transcriptomics with both locus-based thyroid-liver colocalization and gene-resolved plasma protein Mendelian randomization. Because these 2 tracks sample distinct biological compartments, together they captured intracellular positional regulators and circulating protein effectors, defining 26 prioritized candidate genes. Interrogating this panel in thyroid hormone receptor beta-knockout human hepatocytes revealed a select set of thyroid hormone-responsive genes (GPCPD1, ADH4 and F13B) that show significantly attenuated responses following THRB loss in human cells. In human cohorts, circulating candidate proteins were associated with measures of hepatic steatosis and fibroinflammation in plasma, while adjusting for a hepatocyte marker score in staged patient biopsies uncovered reproducible disease associations (ABHD1, F13B, ADH4 and LGALS4) distinct from bulk fibrotic scarring. Together with the pathway-level rediscovery of redox-related transcriptional responses operating alongside classical lipid metabolism, these candidates will facilitate investigations into less-explored mechanisms of thyroid hormone-dependent liver biology.
+
+## Analysis code
+
+This repository (thyroid-liver-axis-analysis) holds the analysis code for the manuscript above, on genetic and transcriptomic links between thyroid hormone signalling and metabolic
 dysfunction-associated steatotic liver disease (MASLD/MASH): shared thyroid-liver GWAS loci, hepatic T3 response in
 mouse liver, THRB dependence in human hepatocytes, and redox gene-set and fibrosis-stage analyses in human liver.
 
-The repository contains the R scripts that produced the supplementary tables and figures. It does not contain any
-data; all inputs are public (see [`data/README.md`](data/README.md)) or are tables of the supplementary workbook.
+The repository contains the R scripts that produced the supplementary tables and figures. It contains no raw data. The only
+data file is `data/gene_sets/gwas_gene_flags.tsv`, a gene-level table (gene symbol and a 0/1 flag per trait) derived from the
+FUMA results; all other inputs are public (see [`data/README.md`](data/README.md)) or are tables of the supplementary workbook.
 
 ## Layout
 
 | Folder | Content |
 |---|---|
 | `scripts/` | analysis scripts, numbered in the order of the pipeline |
-| `figures/` | one standalone script per figure; each reads the Supplementary Tables workbook (and, where stated, public files) |
+| `figures/` | one standalone script per figure; each reads the Supplementary Tables workbook (and, where stated, public files or processed result files of the study, see `data/README.md`) |
 | `docs/PROVENANCE.md` | which script and which input produced each supplementary table |
 | `data/` | place the input files here (not tracked, except `gene_sets/gwas_gene_flags.tsv`); see `data/README.md` |
 | `docs/FUMA_settings.md` | settings and job overview of the 12 FUMA web runs (from the `params.config` files of the jobs) |
@@ -21,7 +28,7 @@ data; all inputs are public (see [`data/README.md`](data/README.md)) or are tabl
 
 | Step | Script | What it does | Supplementary table |
 |---|---|---|---|
-| 0 | `00_gwas_gene_sets_from_FUMA.R` | FUMA output of the 12 GWAS datasets to cis-eQTL genes, trait gene sets, thyroid-derived / liver-derived / shared genes (FUMA itself is a web tool: `docs/FUMA_settings.md`); reproduces `data/gene_sets/gwas_gene_flags.tsv` | S3a (counts) |
+| 0 | `00_gwas_gene_sets_from_FUMA.R` | FUMA output of the 12 GWAS datasets to cis-eQTL genes, trait gene sets, thyroid-derived / liver-derived / shared genes (FUMA itself is a web tool: `docs/FUMA_settings.md`); reproduces `data/gene_sets/gwas_gene_flags.tsv` (1,120 FUMA symbols in the liver-derived set = 1,119 genes, see `docs/PROVENANCE.md`) | S3a (counts) |
 | 0b | `00b_magma_gene_set_enrichment.R` | MAGMA gene-level analysis of the 12 GWAS datasets and competitive gene-set tests in both directions | S1 |
 | 0c | `00c_gene_overlap_hypergeometric.R` | exploratory hypergeometric and permutation test of the shared-gene overlap (not part of the submitted tables) | - |
 | 1a | `01a_coloc_scan.R` | colocalization scan (coloc.abf) of liver MRI and thyroid GWAS: 458 windows, 66 dataset pairs | S2b |
@@ -47,7 +54,10 @@ Methods of the manuscript; see `docs/PROVENANCE.md` for what is and is not inclu
 Steps 0c, 1b and 1c, and the checks of all steps of 0 - 1c, run from the Supplementary Tables workbook alone (step 1c also
 needs the UCSC refGene table). Steps 0, 0b and 1a need the downloaded public data; `data/README.md` lists, for every script,
 whether the workbook is enough and which files to download otherwise. All inputs are found by file name, no path has to be
-edited:
+edited. The figure scripts read the workbook as well; Figure 2 (panel C), Figure 3 (panel B) and Figure 4 (panels B and C) in
+addition need two processed result files of the study, `GSE85793_mouse_liver_T3_DESeq2_all_genes.csv` (made by step 3) and
+`T3_effect_WT_KO_interaction_wide.csv` (made by step 8); without them Figure 3 stops and the panels of Figures 2 and 4 are
+replaced by a note (`data/README.md`):
 
 ```bash
 DATA_DIR=data Rscript scripts/01b_coloc_window_tiers.R          # uses S2b of the workbook if no scan output is present
