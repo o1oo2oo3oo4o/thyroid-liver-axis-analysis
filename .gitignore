@@ -1,0 +1,26 @@
+# data and results are not tracked
+data/*
+!data/README.md
+!data/gene_sets/
+results/
+figures_out*/
+*.rds
+cache_gwas_*
+
+# revision analyses (scripts/revision): inputs are not tracked, except the README and three small gene-set tables
+scripts/revision/data/*
+!scripts/revision/data/README.md
+!scripts/revision/data/redox_gene_sets_human.csv
+!scripts/revision/data/redox_gene_sets_mouse.csv
+!scripts/revision/data/glutathione_sensitivity_conditions_mouse.csv
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# OS / editors
+.DS_Store
+Thumbs.db
+~$*
