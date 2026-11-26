@@ -1,0 +1,149 @@
+set,mouse_symbol
+Glutathione-related,Gclc
+Glutathione-related,Gclm
+Glutathione-related,Ggt1
+Glutathione-related,Ggt5
+Glutathione-related,Gpx1
+Glutathione-related,Gpx2
+Glutathione-related,Gpx3
+Glutathione-related,Gpx4
+Glutathione-related,Gpx6
+Glutathione-related,Gpx7
+Glutathione-related,Gsr
+Glutathione-related,Gss
+Glutathione-related,Gsta1
+Glutathione-related,Gsta2
+Glutathione-related,Gsta3
+Glutathione-related,Gsta4
+Glutathione-related,Gstk1
+Glutathione-related,Gstm1
+Glutathione-related,Gstm2
+Glutathione-related,Gstm3
+Glutathione-related,Gstm4
+Glutathione-related,Gstm5
+Glutathione-related,Gstm6
+Glutathione-related,Gstm7
+Glutathione-related,Gsto1
+Glutathione-related,Gsto2
+Glutathione-related,Gstp1
+Glutathione-related,Gstp2
+Glutathione-related,Gstt1
+Glutathione-related,Gstt2
+Glutathione-related,Gstt3
+Glutathione-related,Gstz1
+Glutathione-related,Idh1
+Glutathione-related,Mgst1
+Glutathione-related,Mgst2
+Glutathione-related,Mgst3
+NRF2 target genes,Abcc4
+NRF2 target genes,Akr1b8
+NRF2 target genes,Akr1c18
+NRF2 target genes,Cat
+NRF2 target genes,Cbr1
+NRF2 target genes,Cbr3
+NRF2 target genes,Ephx1
+NRF2 target genes,Gclc
+NRF2 target genes,Gclm
+NRF2 target genes,Gsta3
+NRF2 target genes,Hmox1
+NRF2 target genes,Keap1
+NRF2 target genes,Mt1
+NRF2 target genes,Mt2
+NRF2 target genes,Nfe2l2
+NRF2 target genes,Nqo1
+NRF2 target genes,Prdx1
+NRF2 target genes,Prdx2
+NRF2 target genes,Prdx3
+NRF2 target genes,Prdx4
+NRF2 target genes,Prdx5
+NRF2 target genes,Prdx6
+NRF2 target genes,Sod1
+NRF2 target genes,Sod2
+NRF2 target genes,Sod3
+NRF2 target genes,Srxn1
+NRF2 target genes,Txn1
+NRF2 target genes,Txn2
+NRF2 target genes,Txnrd1
+Iron homeostasis,Aco1
+Iron homeostasis,Bdh2
+Iron homeostasis,Cp
+Iron homeostasis,Fech
+Iron homeostasis,Fth1
+Iron homeostasis,Ftl1
+Iron homeostasis,Hamp
+Iron homeostasis,Hamp2
+Iron homeostasis,Heph
+Iron homeostasis,Hfe
+Iron homeostasis,Hmox1
+Iron homeostasis,Ireb2
+Iron homeostasis,Ncoa4
+Iron homeostasis,Slc11a2
+Iron homeostasis,Slc39a14
+Iron homeostasis,Slc39a8
+Iron homeostasis,Slc40a1
+Iron homeostasis,Steap3
+Iron homeostasis,Tf
+Iron homeostasis,Tfr2
+Iron homeostasis,Tfrc
+Lipid peroxidation / ferroptosis,Acsl4
+Lipid peroxidation / ferroptosis,Aifm2
+Lipid peroxidation / ferroptosis,Alox15
+Lipid peroxidation / ferroptosis,Alox5
+Lipid peroxidation / ferroptosis,Ch25h
+Lipid peroxidation / ferroptosis,Chac1
+Lipid peroxidation / ferroptosis,Cyb5r3
+Lipid peroxidation / ferroptosis,Cybb
+Lipid peroxidation / ferroptosis,Elovl5
+Lipid peroxidation / ferroptosis,Fads1
+Lipid peroxidation / ferroptosis,Fads2
+Lipid peroxidation / ferroptosis,Gpx4
+Lipid peroxidation / ferroptosis,Lpcat3
+Lipid peroxidation / ferroptosis,Ncoa4
+Lipid peroxidation / ferroptosis,Nox1
+Lipid peroxidation / ferroptosis,Nox4
+Lipid peroxidation / ferroptosis,Pebp1
+Lipid peroxidation / ferroptosis,Por
+Lipid peroxidation / ferroptosis,Sat1
+Lipid peroxidation / ferroptosis,Slc7a11
+Lipid peroxidation / ferroptosis,Tfrc
+Microsomal P450 oxidoreduction,Cyb5a
+Microsomal P450 oxidoreduction,Cyb5r3
+Microsomal P450 oxidoreduction,Cyp1a1
+Microsomal P450 oxidoreduction,Cyp1a2
+Microsomal P450 oxidoreduction,Cyp27a1
+Microsomal P450 oxidoreduction,Cyp2a4
+Microsomal P450 oxidoreduction,Cyp2a5
+Microsomal P450 oxidoreduction,Cyp2b10
+Microsomal P450 oxidoreduction,Cyp2c29
+Microsomal P450 oxidoreduction,Cyp2e1
+Microsomal P450 oxidoreduction,Cyp3a11
+Microsomal P450 oxidoreduction,Cyp3a16
+Microsomal P450 oxidoreduction,Cyp3a25
+Microsomal P450 oxidoreduction,Cyp4a10
+Microsomal P450 oxidoreduction,Cyp4a14
+Microsomal P450 oxidoreduction,Cyp4a31
+Microsomal P450 oxidoreduction,Cyp7a1
+Microsomal P450 oxidoreduction,Cyp8b1
+Microsomal P450 oxidoreduction,Fmo1
+Microsomal P450 oxidoreduction,Fmo3
+Microsomal P450 oxidoreduction,Fmo5
+Microsomal P450 oxidoreduction,Por
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Acadl
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Acadm
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Acads
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Acadvl
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Acox1
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Acox2
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Bdh1
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Cpt1a
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Cpt2
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Echs1
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Etfa
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Etfb
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Etfdh
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Hadha
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Hadhb
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Hmgcl
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Hmgcs2
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Oxct1
+Fatty acid beta-oxidation (mitochondrial and peroxisomal),Slc25a20

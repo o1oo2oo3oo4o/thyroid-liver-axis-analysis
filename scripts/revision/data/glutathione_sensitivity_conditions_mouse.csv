@@ -1,0 +1,145 @@
+condition,gene,included,tested
+full,Gclc,True,True
+full,Gclm,True,True
+full,Ggt1,True,False
+full,Ggt5,True,True
+full,Gpx1,True,True
+full,Gpx2,True,False
+full,Gpx3,True,True
+full,Gpx4,True,True
+full,Gpx6,True,False
+full,Gpx7,True,True
+full,Gsr,True,True
+full,Gss,True,True
+full,Gsta1,True,False
+full,Gsta2,True,False
+full,Gsta3,True,True
+full,Gsta4,True,True
+full,Gstk1,True,True
+full,Gstm1,True,True
+full,Gstm2,True,True
+full,Gstm3,True,True
+full,Gstm4,True,True
+full,Gstm5,True,True
+full,Gstm6,True,True
+full,Gstm7,True,True
+full,Gsto1,True,True
+full,Gsto2,True,False
+full,Gstp1,True,True
+full,Gstp2,True,False
+full,Gstt1,True,True
+full,Gstt2,True,True
+full,Gstt3,True,True
+full,Gstz1,True,True
+full,Idh1,True,True
+full,Mgst1,True,True
+full,Mgst2,True,False
+full,Mgst3,True,True
+Gstm collapsed,Gclc,True,True
+Gstm collapsed,Gclm,True,True
+Gstm collapsed,Ggt1,True,False
+Gstm collapsed,Ggt5,True,True
+Gstm collapsed,Gpx1,True,True
+Gstm collapsed,Gpx2,True,False
+Gstm collapsed,Gpx3,True,True
+Gstm collapsed,Gpx4,True,True
+Gstm collapsed,Gpx6,True,False
+Gstm collapsed,Gpx7,True,True
+Gstm collapsed,Gsr,True,True
+Gstm collapsed,Gss,True,True
+Gstm collapsed,Gsta1,True,False
+Gstm collapsed,Gsta2,True,False
+Gstm collapsed,Gsta3,True,True
+Gstm collapsed,Gsta4,True,True
+Gstm collapsed,Gstk1,True,True
+Gstm collapsed,Gstm1,True,True
+Gstm collapsed,Gstm2,False,True
+Gstm collapsed,Gstm3,False,True
+Gstm collapsed,Gstm4,False,True
+Gstm collapsed,Gstm5,False,True
+Gstm collapsed,Gstm6,False,True
+Gstm collapsed,Gstm7,False,True
+Gstm collapsed,Gsto1,True,True
+Gstm collapsed,Gsto2,True,False
+Gstm collapsed,Gstp1,True,True
+Gstm collapsed,Gstp2,True,False
+Gstm collapsed,Gstt1,True,True
+Gstm collapsed,Gstt2,True,True
+Gstm collapsed,Gstt3,True,True
+Gstm collapsed,Gstz1,True,True
+Gstm collapsed,Idh1,True,True
+Gstm collapsed,Mgst1,True,True
+Gstm collapsed,Mgst2,True,False
+Gstm collapsed,Mgst3,True,True
+Gstm removed,Gclc,True,True
+Gstm removed,Gclm,True,True
+Gstm removed,Ggt1,True,False
+Gstm removed,Ggt5,True,True
+Gstm removed,Gpx1,True,True
+Gstm removed,Gpx2,True,False
+Gstm removed,Gpx3,True,True
+Gstm removed,Gpx4,True,True
+Gstm removed,Gpx6,True,False
+Gstm removed,Gpx7,True,True
+Gstm removed,Gsr,True,True
+Gstm removed,Gss,True,True
+Gstm removed,Gsta1,True,False
+Gstm removed,Gsta2,True,False
+Gstm removed,Gsta3,True,True
+Gstm removed,Gsta4,True,True
+Gstm removed,Gstk1,True,True
+Gstm removed,Gstm1,False,True
+Gstm removed,Gstm2,False,True
+Gstm removed,Gstm3,False,True
+Gstm removed,Gstm4,False,True
+Gstm removed,Gstm5,False,True
+Gstm removed,Gstm6,False,True
+Gstm removed,Gstm7,False,True
+Gstm removed,Gsto1,True,True
+Gstm removed,Gsto2,True,False
+Gstm removed,Gstp1,True,True
+Gstm removed,Gstp2,True,False
+Gstm removed,Gstt1,True,True
+Gstm removed,Gstt2,True,True
+Gstm removed,Gstt3,True,True
+Gstm removed,Gstz1,True,True
+Gstm removed,Idh1,True,True
+Gstm removed,Mgst1,True,True
+Gstm removed,Mgst2,True,False
+Gstm removed,Mgst3,True,True
+all transferases removed,Gclc,True,True
+all transferases removed,Gclm,True,True
+all transferases removed,Ggt1,True,False
+all transferases removed,Ggt5,True,True
+all transferases removed,Gpx1,True,True
+all transferases removed,Gpx2,True,False
+all transferases removed,Gpx3,True,True
+all transferases removed,Gpx4,True,True
+all transferases removed,Gpx6,True,False
+all transferases removed,Gpx7,True,True
+all transferases removed,Gsr,True,True
+all transferases removed,Gss,True,True
+all transferases removed,Gsta1,False,False
+all transferases removed,Gsta2,False,False
+all transferases removed,Gsta3,False,True
+all transferases removed,Gsta4,False,True
+all transferases removed,Gstk1,False,True
+all transferases removed,Gstm1,False,True
+all transferases removed,Gstm2,False,True
+all transferases removed,Gstm3,False,True
+all transferases removed,Gstm4,False,True
+all transferases removed,Gstm5,False,True
+all transferases removed,Gstm6,False,True
+all transferases removed,Gstm7,False,True
+all transferases removed,Gsto1,False,True
+all transferases removed,Gsto2,False,False
+all transferases removed,Gstp1,False,True
+all transferases removed,Gstp2,False,False
+all transferases removed,Gstt1,False,True
+all transferases removed,Gstt2,False,True
+all transferases removed,Gstt3,False,True
+all transferases removed,Gstz1,False,True
+all transferases removed,Idh1,True,True
+all transferases removed,Mgst1,False,True
+all transferases removed,Mgst2,False,False
+all transferases removed,Mgst3,False,True
